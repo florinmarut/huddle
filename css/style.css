@@ -5,7 +5,7 @@ body{
     margin: 0;
 }
 
-/* Header Section */
+/* HEADER SECTION */
 header{
     padding: 3%;
     background-color: hsl(193, 100%, 96%);
@@ -26,7 +26,7 @@ header{
     text-align: center;
 }
 
-#container{
+#header-content-container{
     box-sizing: border-box;
     position: relative;
     top: 15%;
@@ -68,7 +68,7 @@ button{
     width: 75%;
 }
 
-/* Artile Section */
+/* ARTICLE SECTION */
 article{
     display: flex;
     flex-direction: column;
@@ -105,9 +105,29 @@ article{
     right: 0;
 }
 
+footer{
+    background-color: hsl(192, 100%, 9%);
+}
+
+/* FOOTER SECTION */
+.footer-flex-container{
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    height: 90%;
+    padding: 7% 0 0;
+}
+
+.footer-inflex-container{
+    border: 1px solid yellow;
+    flex: 1 200px;
+    height: 250px;
+}
+
 /* Media Queries */
 
-@media screen and (min-width: 756px){
+@media screen and (min-width: 758px){
     header{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -119,7 +139,7 @@ article{
     }
 }
 
-@media screen and (max-width: 756px){
+@media screen and (max-width: 758px){
     header{
         background-image: url(../images/bg-hero-mobile.svg)
     }
@@ -139,7 +159,7 @@ article{
         width: 25%;
     }
 
-    #container{
+    #header-content-container{
         top: 0;
     }
 
