@@ -142,4 +142,26 @@ article{
     #container{
         top: 0;
     }
+
+    article{
+        align-items: center;
+    }
+
+    .article-content{
+        text-align: center;
+    }
+    
+     .card{
+        flex-direction: column;
+        width: 90%;
+        height: 600px;
+    }
+
+    .card:first-child > .article-content-container:nth-child(2){
+        order: -1;
+    }
+
+    .card:last-child > .article-content-container:nth-child(2){
+        order: -1;
+    }
 }
