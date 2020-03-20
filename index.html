@@ -8,6 +8,8 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   
+  <script src="https://kit.fontawesome.com/2543a8ede4.js" crossorigin="anonymous"></script>
+  
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
 </head>
 <body>
@@ -25,7 +27,7 @@
           You have a voice, but so does your audience. Create connections with your users
           as you engage in genuine discussion.
         </p>
-        <button id="getstartedbtn">Get Started For Free</button></div>
+        <button class="getstartedbtn">Get Started For Free</button></div>
     </div>
     <div id="right-header-content">
       <img id="illustration-mockups" src="images/illustration-mockups.svg" alt="illustration">
@@ -84,21 +86,38 @@
   <!-- FOOTER SECTION -->
 
   <footer>
+    <div id="footer-card">
+      <h2>Ready To Build Your Community?</h2>
+      <button class="getstartedbtn" id="footerbtn">Get Started For Free</button>
+    </div>
     <div class="footer-flex-container">
       <div class="footer-inflex-container">
-        <img src="images/logo2.svg" alt="logo">
+        <img id="logo-img" src="images/logo2.svg" alt="logo">
+        <span><img src="images/icon-location.svg" alt="location image"> Timișoara</span>
+        <span><img src="images/icon-phone.svg" alt="phone image"> +1-543-123-4567</span>
+        <span><img src="images/icon-email.svg" alt="email icon"> contact@huddle.com</span>
       </div>
 
       <div class="footer-inflex-container">
-        
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">What We Do</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
       </div>
 
       <div class="footer-inflex-container">
-        
+        <ul>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
       </div>
 
       <div class="footer-inflex-container">
-        
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram"></i>
       </div>
     </div>
 
