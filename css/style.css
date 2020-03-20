@@ -102,7 +102,6 @@ article{
 }
 
 .article-image{
-    width: 60%;
     margin: auto;
     position: absolute;
     top: 0;
@@ -115,7 +114,6 @@ article{
 /* FOOTER SECTION */
 footer{
     background-color: hsl(192, 100%, 9%);
-    margin: 15% 0 0;
     padding-bottom: 10px;
     position: relative;
 }
@@ -180,9 +178,23 @@ li, .fab, span{
     top: 0;
 }
 
+footer > p{
+    color: #fff;
+}
+
+footer > p > a{
+    color: hsl(322, 100%, 66%);
+}
+
 /* Media Queries */
 
-@media screen and (min-width: 758px){
+@media screen and (max-width: 1074px){
+    #header-content-container{
+        top: 0;
+    }
+}
+
+@media screen and (min-width: 768px){
     header{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -192,9 +204,22 @@ li, .fab, span{
                              "left-header-content right-header-content"
                              "left-header-content right-header-content";
     }
+
+    .article-image{
+        width: 60%;
+    }
+
+    footer{
+        margin: 20% 0 0;
+        padding-top: 75px;
+    }
+
+    .footer-inflex-container{
+        padding-top: 50px;
+    }
 }
 
-@media screen and (max-width: 758px){
+@media screen and (max-width: 767px){
     header{
         background-image: url(../images/bg-hero-mobile.svg)
     }
@@ -214,16 +239,16 @@ li, .fab, span{
         width: 25%;
     }
 
-    #header-content-container{
-        top: 0;
-    }
-
     article{
         align-items: center;
     }
 
     .article-content{
         text-align: center;
+    }
+
+    .article-image{
+        width: 50%;
     }
     
      .card{
@@ -241,8 +266,8 @@ li, .fab, span{
     }
 
     footer{
-        margin-top: 50%;
         text-align: center;
+        margin: 25% 0 0;
     }
 
     #footer-card{
@@ -257,7 +282,15 @@ li, .fab, span{
         padding: 0;
         margin: 0;
     }
-    
+
+    .footer-flex-container{
+        padding: 0;
+    }
+
+    .footer-inflex-container:nth-of-type(n+2):nth-last-child(n-2){
+        height: 100px;
+    }
+
     li a{
         margin-left: -2rem;
     }
